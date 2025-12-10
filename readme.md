@@ -1,20 +1,21 @@
-# Ray Tracer RT-1
+# Ray Tracer
 
 **Disciplina:** Computação Gráfica  
 **Instituição:** Universidade Federal de Minas Gerais (UFMG)  
 **Professor:** Renato Ferreira
+**Aluno:** Pedro Dalla-Lana - 2020420613
 
 ---
 
-## 📋 Descrição
+## Descrição
 
 Implementação completa de um renderizador por **Ray Tracing** em C++17 que processa cenas descritas em arquivos texto e gera imagens no formato PPM. O programa implementa iluminação global com reflexões, refrações, sombras e múltiplos tipos de superfícies.
 
 ---
 
-## 🎯 Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
-### ✅ Funcionalidade Básica
+### Funcionalidade Básica
 
 #### **1. Câmera Configurável**
 - Posição da câmera (eye)
@@ -63,7 +64,7 @@ Implementação completa de um renderizador por **Ray Tracing** em C++17 que pro
 
 ---
 
-### ⭐ Funcionalidades Extras Implementadas
+### Funcionalidades Extras Implementadas
 
 #### **Ray Tracing Distribuído**
 1. **Anti-Aliasing**
@@ -85,7 +86,7 @@ Implementação completa de um renderizador por **Ray Tracing** em C++17 que pro
 
 ---
 
-## 🏗️ Arquitetura do Código
+## Arquitetura do Código
 
 ### Estrutura de Diretórios
 ```
@@ -184,7 +185,7 @@ projeto/
 
 ---
 
-## 🔧 Compilação
+## Compilação
 
 ### Requisitos
 - **Compilador:** g++ com suporte a C++17
@@ -214,7 +215,7 @@ make distclean
 
 ---
 
-## ▶️ Execução
+## Execução
 
 ### Sintaxe
 ```bash
@@ -242,7 +243,7 @@ make distclean
 
 ---
 
-## 🧪 Testes
+## Testes
 
 ### Atalhos do Makefile
 
@@ -311,7 +312,7 @@ make dof-test5    # Test5 com DOF
 
 ---
 
-## 📄 Formato do Arquivo de Entrada
+## Formato do Arquivo de Entrada
 
 O arquivo `.in` segue a especificação do enunciado com 5 seções:
 
@@ -363,7 +364,7 @@ pigment_idx finish_idx quadric A B C D E F G H I J
 
 ---
 
-## 🎨 Formato de Saída
+## Formato de Saída
 
 **Formato:** PPM P3 (ASCII)
 
@@ -393,7 +394,7 @@ convert resultados/test5.ppm resultados/test5.png
 
 ---
 
-## 🚀 Otimizações Implementadas
+## Otimizações Implementadas
 
 ### Algoritmos Eficientes
 1. **Möller-Trumbore** para triângulos (sem pré-computação de plano)

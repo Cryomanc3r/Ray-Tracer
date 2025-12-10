@@ -191,30 +191,7 @@ tests-all: test
 	@if [ -f $(TESTDIR)/test6.in ]; then $(MAKE) test6; fi
 	@echo "Todos os testes disponíveis concluídos!"
 
-# Help
-help:
-	@echo "Ray Tracer RT-1 - Sistema de Build"
-	@echo ""
-	@echo "Uso: make [target]"
-	@echo ""
-	@echo "Targets principais:"
-	@echo "  all (default) - Compilar o programa"
-	@echo "  clean         - Remover objetos"
-	@echo "  distclean     - Remover objetos, executável e resultados"
-	@echo "  debug         - Compilar em modo debug"
-	@echo ""
-	@echo "Testes:"
-	@echo "  test          - Executar testes padrão (test1-5)"
-	@echo "  test1-6       - Executar teste individual"
-	@echo "  tests-quick   - Testes rápidos (baixa resolução)"
-	@echo "  tests-all     - Todos os testes disponíveis"
-	@echo ""
-	@echo "Testes avançados:"
-	@echo "  quick-test1-6 - Teste rápido individual"
-	@echo "  hd-test4-5    - Testes em alta resolução"
-	@echo "  dof-test4-5   - Testes com Depth of Field"
-	@echo ""
-	@echo "Para mais informações, consulte README.md"
+
 
 .PHONY: all clean distclean debug test test1 test2 test3 test4 test5 test6 \
         quick-test1 quick-test2 quick-test3 quick-test4 quick-test5 quick-test6 \
