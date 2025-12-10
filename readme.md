@@ -422,7 +422,7 @@ convert resultados/test5.ppm resultados/test5.png
 
 ---
 
-## 📊 Performance Esperada
+## Performance Esperada
 
 | Resolução | Amostras | Objetos | Tempo Estimado |
 |-----------|----------|---------|----------------|
@@ -434,7 +434,7 @@ convert resultados/test5.ppm resultados/test5.png
 
 ---
 
-## 🐛 Debugging
+## Debugging
 
 ### Build Debug
 ```bash
@@ -448,50 +448,16 @@ Use resolução baixa e poucas amostras:
 ./bin/ray_tracer testes/test4.in debug.ppm 200 150 1
 ```
 
-### Problemas Comuns
 
-**Imagem muito escura:**
-- Verifique se a luz ambiente (primeira luz) está configurada
-- Aumente coeficiente `ka` nos acabamentos
-
-**Objetos brancos/sem cor:**
-- Verifique índices de pigmento/acabamento
-- Confirme que arquivos de textura existem
-
-**Renderização lenta:**
-- Reduza número de amostras
-- Reduza resolução
-- Verifique se há loops infinitos em reflexão/refração
-
-**Artefatos visuais:**
-- Aumente EPSILON (atualmente 1e-6)
-- Aumente SHADOW_BIAS (atualmente 0.001)
-
----
-
-## 📚 Referências
-
-### Algoritmos
-- **Ray Tracing:** "Ray Tracing in One Weekend" - Peter Shirley
-- **Möller-Trumbore:** Fast, Minimum Storage Ray-Triangle Intersection (1997)
-- **Phong Shading:** Bui Tuong Phong (1975)
-- **Lei de Snell:** Refração de luz
-
-### Documentação C++
-- [cppreference.com](https://en.cppreference.com/)
-- C++17 Standard
-
----
-
-## 👤 Autor
-
+## Autor
+Pedro Dalla-Lana
 Trabalho Prático RT-1  
 Disciplina: Computação Gráfica  
 UFMG - Departamento de Ciência da Computação
 
 ---
 
-## 📝 Notas de Implementação
+## Notas de Implementação
 
 ### Interpretações do Enunciado
 
@@ -508,27 +474,8 @@ UFMG - Departamento de Ciência da Computação
 
 5. **Cor de Fundo:** Cinza escuro (0.1, 0.1, 0.1)
 
-### Limitações Conhecidas
+### Limitações
 - Não implementa CSG (Constructive Solid Geometry)
 - Não implementa motion blur (temporal)
 - Texturas apenas em formato PPM
 - Não implementa BVH/KD-tree (aceleração espacial)
-
----
-
-## ✅ Checklist de Conformidade
-
-- [x] Câmera configurável (eye, lookAt, up, fovy)
-- [x] Múltiplas luzes pontuais + ambiente
-- [x] Modelo de Phong completo
-- [x] Sombras com shadow rays
-- [x] Reflexão recursiva (kr)
-- [x] Refração com Lei de Snell (kt, ior)
-- [x] 3 tipos de pigmentos (solid, checker, texmap)
-- [x] 6 tipos de primitivas (esfera, poliedro, triângulo, cilindro, cone, quádrica)
-- [x] Resolução configurável (padrão 800×600)
-- [x] Formato PPM P3
-- [x] Anti-aliasing (ray tracing distribuído)
-- [x] Depth of Field (câmera com abertura)
-
-**Pontuação Total:** 100 + 30 extras = **130%** ✨
